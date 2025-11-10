@@ -1,7 +1,3 @@
-¡Excelente idea\! Un archivo `README.md` es esencial para documentar el proyecto y sus instrucciones. Aquí tienes un borrador que cubre el propósito, la instalación, y la explicación de los comandos que hemos optimizado.
-
------
-
 # 🎨 Color-by-Numbers Generator (SAM + SLIC + ΔE2000)
 
 Este es un proyecto personal desarrollado en Python para generar kits de "Pintar por Números" de alta calidad, utilizando técnicas avanzadas de Computer Vision. La clave es el balance entre los contornos estructurales proporcionados por el **Segment Anything Model (SAM) de Meta** y el detalle fino capturado por la segmentación **SLIC** y los umbrales de color **ΔE2000**.
