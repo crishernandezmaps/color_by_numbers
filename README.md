@@ -48,7 +48,7 @@ python new.py --input "in/NOMBRE.png" --out NOMBRE_SALIDA [OPCIONES...]
 Este comando es el resultado de varias iteraciones, logrando un balance óptimo entre detalle y contornos limpios.
 
 ```bash
-python new.py \
+python app.py \
     --input "in/frida02.png" \
     --out frida02 \
     --sam-checkpoint sam_vit_b_01ec64.pth \
