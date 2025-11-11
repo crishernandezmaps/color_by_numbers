@@ -78,6 +78,24 @@ python app.py \
 
 -----
 
+## Aceleración por GPU (CUDA)
+
+El proceso más intensivo del generador es el cálculo de máscaras estructurales mediante el Segment Anything Model (SAM): *app_gpu_poster.py*.
+
+Para procesar imágenes de muy alta resolución (como las configuraciones A2 a 300 DPI, que superan los 7000 píxeles de ancho), el uso de la CPU puede ser lento. Este proyecto está optimizado para utilizar la GPU a través de PyTorch (requiere CUDA instalado) al especificar el parámetro --sam-device cuda.
+
+Ejecución Optimizada con GPU
+
+Se ha implementado un wrapper (run_simple.sh o similar) que detecta automáticamente si el entorno soporta CUDA y establece el parámetro --sam-device a cuda si es posible.
+
+Para usar la versión acelerada, asegúrate de que PyTorch con soporte CUDA esté instalado y ejecuta el script de shell:
+
+```
+./run_gpu.sh
+```
+
+El script de ejecución ahora solo requiere que definas la ruta completa del archivo de entrada (ej. in/mi_imagen.jpg), eliminando la necesidad de especificar la extensión por separado.
+
 ## 🔬 Explicación de Parámetros Clave
 
 Los parámetros determinan la calidad y la complejidad del kit.
